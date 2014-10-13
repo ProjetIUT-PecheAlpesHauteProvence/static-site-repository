@@ -3,6 +3,10 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ @font-face{
+    font-family: 'djb';
+    src: url('../fonts/RemachineScript.ttf');
+ }
 
 body {
     width: 100%;
@@ -24,10 +28,10 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "djb",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+    font-size: 40px;
 }
 
 p {
@@ -134,13 +138,18 @@ a:focus {
     width: 75%;
     height: 45%;
 }
+.djb{
+    font-family: djb;
+    font-size: 45px;
+}
 .intro {
+
     display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #BD7202;
+    color: #FF4719;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -148,7 +157,11 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
-
+#intro{
+        border-radius: 5px;
+        padding: 10px;
+        background-color:rgba(255, 255, 255, 0.5);
+}
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
@@ -159,22 +172,29 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
+    color: #000;
     font-size: 18px;
 }
 
 @media(min-width:767px) {
-    .intro {
+    .intro { 
         height: 100%;
-        padding: 0;
+        
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .intro .intro-body .intro-text {
-        font-size: 25px;
+        font-family: djb;
+        font-size: 40px;
     }
+    #intro{
+        border-radius: 5px;
+        padding: 25px;
+        background-color:rgba(255, 255, 255, 0.8);
+}
 }
 
 .btn-circle {
@@ -182,10 +202,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #40A443;
     border-radius: 35px;
     font-size: 40px;
-    color: #E98D03;
+    color: #40A443  ;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -195,7 +215,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: #FF4719;
     background: rgba(255,255,255,.1);
 }
 
